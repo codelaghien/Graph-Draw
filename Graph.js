@@ -4,7 +4,7 @@ class Graph {
 		this.fontSize = fontSize;
 		this.vertices = [];
 	}
-
+ 
 	draw() {
 		for (let vertex of this.vertices) {
 			vertex.draw();

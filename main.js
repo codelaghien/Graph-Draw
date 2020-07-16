@@ -59,8 +59,12 @@ function setup() {
 	buttonImport.mousePressed(importGraph);
 
 	inputTextArea = createElement('TextArea');
-	inputTextArea.position(15, 250);
+	inputTextArea.id('inputTextArea');
+	inputTextArea.position(15, 250); 
 	inputTextArea.size(100, 200);
+	document.getElementById('inputTextArea').innerText =
+		'[{"id":0,"name":"A","x":221,"y":761,"edges":[{"vertexBId":1,"weight":3},{"vertexBId":5,"weight":9},{"vertexBId":3,"weight":6}]},{"id":1,"name":"B","x":399,"y":651,"edges":[{"vertexBId":0,"weight":3},{"vertexBId":2,"weight":2},{"vertexBId":4,"weight":9},{"vertexBId":5,"weight":9},{"vertexBId":3,"weight":4}]},{"id":2,"name":"C","x":488,"y":465,"edges":[{"vertexBId":1,"weight":2},{"vertexBId":3,"weight":2},{"vertexBId":6,"weight":9},{"vertexBId":4,"weight":8}]},{"id":3,"name":"D","x":416,"y":304,"edges":[{"vertexBId":0,"weight":6},{"vertexBId":1,"weight":4},{"vertexBId":2,"weight":2},{"vertexBId":6,"weight":9}]},{"id":4,"name":"E","x":885,"y":620,"edges":[{"vertexBId":1,"weight":9},{"vertexBId":2,"weight":8},{"vertexBId":5,"weight":8},{"vertexBId":6,"weight":7},{"vertexBId":8,"weight":9},{"vertexBId":9,"weight":10}]},{"id":5,"name":"F","x":768,"y":1005,"edges":[{"vertexBId":0,"weight":9},{"vertexBId":1,"weight":9},{"vertexBId":4,"weight":8},{"vertexBId":9,"weight":18}]},{"id":6,"name":"G","x":881,"y":166,"edges":[{"vertexBId":2,"weight":9},{"vertexBId":3,"weight":9},{"vertexBId":4,"weight":7},{"vertexBId":7,"weight":4},{"vertexBId":8,"weight":5}]},{"id":7,"name":"H","x":1142,"y":108,"edges":[{"vertexBId":6,"weight":4},{"vertexBId":8,"weight":1},{"vertexBId":9,"weight":4}]},{"id":8,"name":"I","x":1263,"y":234,"edges":[{"vertexBId":4,"weight":9},{"vertexBId":6,"weight":5},{"vertexBId":7,"weight":1},{"vertexBId":9,"weight":3}]},{"id":9,"name":"J","x":1520,"y":243,"edges":[{"vertexBId":4,"weight":10},{"vertexBId":5,"weight":18},{"vertexBId":7,"weight":4},{"vertexBId":8,"weight":3}]}]';
+}
 }
 
 function draw() {

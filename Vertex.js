@@ -2,7 +2,7 @@ class Vertex {
 	static #id = 0;
 	static #drawID = true;
 
-	constructor(x, y, diameter, fontSize) {
+	constructor(x, y, diameter, fontSize) { 
 		this.id = Vertex.#id++;
 		this.name = String.fromCharCode(65 + this.id);
 		this.fontSize = fontSize;
